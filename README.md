@@ -1,2 +1,3 @@
 # Jenkins
-jenkins using docker with maven
+
+install maven using docker exec -it -u root DockerContainerId /bin/bash

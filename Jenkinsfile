@@ -18,5 +18,12 @@ pipeline {
                 }
             }
         }
+        stage("Test"){
+            steps{
+                dir("Jenkins") {
+                    sh "mvn test"
+                }
+            }
+        }
     }
 }

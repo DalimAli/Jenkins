@@ -11,5 +11,12 @@ pipeline {
                 sh "git clone https://github.com/DalimAli/Jenkins.git"
             }
         }
+        stage("Build"){
+            steps{
+                dir("Jenkins"){
+                    sh "mvn clean install"
+                }
+            }
+        }
     }
 }
